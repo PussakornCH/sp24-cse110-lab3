@@ -1,1 +1,1 @@
-# Lab 2 - Starter
+# Lab 3 - Learning Git Pull and CSS
