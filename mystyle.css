@@ -8,16 +8,49 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .center {
     text-align: center;
     color: hsla(63, 77%, 43%, 0.894); /* hue, saturation, lightness, alpha values */
 }
+p.center { /* specify that only specific HTML elements should be affected by a class. */
+    text-align: center;
+    color:royalblue;
+}
 
-#para1 {
+#para1 {  /* Selector ID */
     text-align: left;
     color: salmon;
 }
 
-div * {
-    background-color: yellow;
+.everything {
+    text-align: left;
+}
+*.everything { /* Universal Selector */
+    color:blueviolet;
+}
+
+h4, h5 { /* Selector List (element, element) */
+    text-align: left;
+    color:rgba(84, 169, 140, 0.748);
+}
+
+/* Attribute Selector (e.g. [attribute=foo]) */
+[alt~="Project"] { 
+    border: 5px solid yellowgreen; /* Border */
+}
+input[type="text"] { 
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color:burlywood;
+  }
+
+/* CSS Pseudo-classes */
+a.highlight:hover {
+    color: #ff0000;
+    font-size: 22px;
 }
