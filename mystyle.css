@@ -1,4 +1,23 @@
+body { /* elements based on name */
+    background-color: azure;  /* apply background styles to your elements */
+}
+
 h1 {
-  color: navy;
-  margin-left: 20px;
+    color: rgb(255, 99, 71); /* red, green, blue, alpha values */
+    margin-left: 20px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    color: hsla(63, 77%, 43%, 0.894); /* hue, saturation, lightness, alpha values */
+}
+
+#para1 {
+    text-align: left;
+    color: salmon;
+}
+
+div * {
+    background-color: yellow;
 }
