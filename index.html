@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab Week 3 - HTML and CSS</title>
     <link rel="icon" href="/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="mystyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -36,7 +41,7 @@
                     <summary id="box-model1">Click to view the meeting agenda</summary>
                     <ol>
                         <li>
-                            <h5>We want to dream real big</h5>
+                            <h4 style="font-family: 'Jersey+25&family', sans-serif;">We want to dream real big</h4>
                             <div>
                                 <p id="para1"> <!-- Id CSS -->
                                 We making a plan to create an gadget that can detect every <b>Living thing</b> in every direction.
@@ -45,8 +50,8 @@
                             </div>
                         </li>
                         <li>
-                            <h5>Learn to be humble and creative</h5>
-                            <p>
+                            <h4 style="font-family: 'Roboto', sans-serif;">Learn to be humble and creative</h4>
+                            <p style="font-family: 'Roboto', sans-serif;">
                                 <i>What is mean to be humble?</i> We learn about the reality of lacking parts and ability to make it big.
                                 We learn to use <em>Everything we have</em> to make the goal come true and add creative in the end.
                             </p>
@@ -66,11 +71,11 @@
                 <summary id="box-model2">Click to view the Comments/Questions/Concerns</summary>
                 <ol>
                     <li>
-                        <h5>Should we give up because of lacking of equiment?</h5>
+                        <h4 style="font-family: 'Montserrat', sans-serif;"></h4>Should we give up because of lacking of equiment?</h5>
                         <p><a>Other team also quit some of them, we don't that good and lacking parts so should just quit</a></p>
                     </li>
                     <li>
-                        <h5>Who will be the one who do the pitch</h5>
+                        <h5 style="font-family: 'Montserrat', sans-serif;">Who will be the one who do the pitch</h5>
                         <p>Pussakorn Will do</p>
                     </li>
                 </ol>
@@ -142,8 +147,33 @@
             <p>Testing The power of the Box</p>
         </div>
     </div>
-    
+
+    <div class="spacer"></div>
+
     <button class="button">Click Me!</button>
+
+    <div class="spacer"></div>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <header class="header">Responsive Header</header>
+    <section class="content">Main Content Area</section>
+    <footer class="footer">Footer Information</footer>
 
 </body>
 
