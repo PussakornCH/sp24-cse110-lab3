@@ -110,7 +110,6 @@ h3 {
     padding: 10px 10px 10px 10px;
     border: 8px double red; 
     border-radius: 1vh 1vw;
-    background-color: red;
 }
 #box-model2 {
     margin-top: 10px;
@@ -125,7 +124,6 @@ h3 {
     border-color: red;
     border-width: 2mm;
     border-radius: 1vh 1vw;
-    background-color: red;
 }
 
 #TextP {
