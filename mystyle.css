@@ -54,3 +54,26 @@ a.highlight:hover {
     color: #ff0000;
     font-size: 22px;
 }
+
+/* CSS Combinators */
+/* descendant selector (space) */
+div b {
+    background-color: yellow;
+}
+/* Child Combinator (element > element) */
+div > ol {
+    background-color: pink;
+}
+/* Adjacent sibling combinator (element + element) */
+div + p {
+    background-color: orange;
+}
+/* General sibling combinator (element ~ element) */
+div ~ strong {
+    background-color: greenyellow;
+}
+/* Combining Two Selectors (element.class) */
+p.everything {
+    font-size: 20px;
+}
+
