@@ -4,7 +4,7 @@ body { /* elements based on name */
 
 h1 {
     color: rgb(255, 99, 71); /* red, green, blue, alpha values */
-    margin-left: 20px;
+    margin-left: 20pt; /* Absolute length units */
     text-align: center;
 }
 
@@ -26,11 +26,16 @@ p.center { /* specify that only specific HTML elements should be affected by a c
     color: salmon;
 }
 
+/* CSS Variables & Fallbacks  */
+:root {
+    --primary-color: blueviolet;
+}
 .everything {
+    color: var(--primary-color, red);
     text-align: left;
 }
 *.everything { /* Universal Selector */
-    color:blueviolet;
+    border: 3mm solid antiquewhite; /* Absolute length units */
 }
 
 h4, h5 { /* Selector List (element, element) */
@@ -40,14 +45,14 @@ h4, h5 { /* Selector List (element, element) */
 
 /* Attribute Selector (e.g. [attribute=foo]) */
 [alt~="Project"] { 
-    border: 5px solid yellowgreen; /* Border */
+    border: 5px solid yellowgreen; /* Border and Absolute length units*/ 
 }
 input[type="text"] { 
     width: 150px;
     display: block;
     margin-bottom: 10px;
     background-color:burlywood;
-  }
+}
 
 /* CSS Pseudo-classes */
 a.highlight:hover {
@@ -89,4 +94,36 @@ h4:has(+ span) {
     &:hover { 
         background-color: aqua;
     }
+}
+
+/*  Unit */
+/*For Absolute, I already use somewhere else.*/
+h3 {
+    font-size: 1.5rem;
+    margin: 2em;
+    padding: 5vh 10vw;
+}
+
+/*Box Model*/
+#box-model1 {
+    margin: 10px 20px 15px 5px;
+    padding: 10px 10px 10px 10px;
+    border: 8px double color(display-p3 1 0 0); 
+    border-radius: 1vh 1vw;
+    background-color: color-mix(in srgb, #34c9eb 0%, white);
+}
+#box-model2 {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-style: double;
+    border-color: color(display-p3 1 0 0);
+    border-width: 2mm;
+    border-radius: 1vh 1vw;
+    background-color: color-mix(in srgb, #34c9eb 25%, white);
 }
