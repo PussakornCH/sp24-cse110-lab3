@@ -77,3 +77,16 @@ p.everything {
     font-size: 20px;
 }
 
+/* New Selectors */
+h4:has(+ span) {
+    background-color: gold;
+}
+/* New Selectors: Nested Selectors */
+.explain {
+    font-family: system-ui;
+    font-size: 1.2rem;
+
+    &:hover { 
+        background-color: aqua;
+    }
+}
