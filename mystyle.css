@@ -169,6 +169,7 @@ h3 {
     border-radius: 5px;
     transition: background-color 0.3s;
     cursor: pointer;
+    text-align: center;
 }
 .button:active {
     background-color: red; /* Darker shade when active */
@@ -209,4 +210,54 @@ h3 {
     padding: 20px;
     text-align: center;
     font-size: 16px;
+}
+
+/* Base styles */
+.header, .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: skyblue;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+/* Play wih Media */
+/* Small screens (phones, less than 768px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    .header, .footer {
+        font-size: 16px;
+    }
+}
+
+/* Medium screens (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    .header, .footer {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+/* Large screens (desktops, more than 1024px) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+    .header, .footer {
+        font-size: 20px;
+        padding: 25px;
+    }
+}
+
+.spacer {
+    height: 50px; /* Height of the spacer determines the space between the groups */
 }
