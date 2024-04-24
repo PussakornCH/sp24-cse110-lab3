@@ -127,3 +127,50 @@ h3 {
     border-radius: 1vh 1vw;
     background-color: color-mix(in srgb, #34c9eb 25%, white);
 }
+
+#TextP {
+    text-decoration: underline wavy green 2px;
+}
+
+/*Display */
+#display-inline {
+    display: inline;
+    background-color: lightcoral;
+    margin: 3px;
+    padding: 3px;
+}
+
+/* Sizing And Position*/
+.box {
+    width: 50%;          
+    height: 150px;       
+    background-color: skyblue;
+    margin: 10px auto;   
+    max-width: 600px;    
+    min-width: 200px;
+    position: relative;
+    top: 40px; left: 40px;
+}
+.container {
+    width: 100%;         
+    max-width: 800px;    
+    min-width: 400px;    
+    margin: 0 auto;     
+    border: 1px solid black;
+    position: static;
+}
+
+/* Active */
+.button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.button:active {
+    background-color: red; /* Darker shade when active */
+}
+
