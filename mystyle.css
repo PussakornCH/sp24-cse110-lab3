@@ -174,3 +174,39 @@ h3 {
     background-color: red; /* Darker shade when active */
 }
 
+/* Flex  */
+.flex-container {
+    display: flex; /* Enables flex context for all its direct children */
+    justify-content: space-around; /* Distributes space around items */
+    align-items: center; /* Aligns items vertically at the center */
+    height: 200px; /* Specify height of the container to see the vertical alignment */
+    background-color: lightgrey;
+}
+
+.flex-item {
+    width: 100px; /* Width for each flex item */
+    padding: 10px;
+    background-color: dodgerblue;
+    text-align: center; /* Center the text horizontally */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Griid  */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns of equal size */
+    grid-template-rows: auto auto; /* Rows sized based on their content */
+    grid-gap: 10px; /* Space between rows and columns */
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.grid-item {
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
