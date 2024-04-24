@@ -69,6 +69,11 @@ div + p {
     background-color: orange;
 }
 /* General sibling combinator (element ~ element) */
-
+div ~ strong {
+    background-color: greenyellow;
+}
 /* Combining Two Selectors (element.class) */
+p.everything {
+    font-size: 20px;
+}
 
