@@ -108,9 +108,9 @@ h3 {
 #box-model1 {
     margin: 10px 20px 15px 5px;
     padding: 10px 10px 10px 10px;
-    border: 8px double color(display-p3 1 0 0); 
+    border: 8px double red; 
     border-radius: 1vh 1vw;
-    background-color: color-mix(in srgb, #34c9eb 0%, white);
+    background-color: red;
 }
 #box-model2 {
     margin-top: 10px;
@@ -122,10 +122,10 @@ h3 {
     padding-bottom: 5px;
     padding-left: 10px;
     border-style: double;
-    border-color: color(display-p3 1 0 0);
+    border-color: red;
     border-width: 2mm;
     border-radius: 1vh 1vw;
-    background-color: color-mix(in srgb, #34c9eb 25%, white);
+    background-color: red;
 }
 
 #TextP {
